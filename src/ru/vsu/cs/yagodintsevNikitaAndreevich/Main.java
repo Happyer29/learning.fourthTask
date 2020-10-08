@@ -22,16 +22,16 @@ public class Main {
 
     private static int getFibonacciSum(int lastNum){
         if(lastNum >= 2) {
-            int summ = 0;
+            int sum = 0;
 
             int j = 0;
             for (int i = 1; i <= lastNum; i = i + j) {
                 j = i - j;
                 if (i % 2 == 0) {
-                    summ += i;
+                    sum += i;
                 }
             }
-            return summ;
+            return sum;
         }
         return -1;
     }
